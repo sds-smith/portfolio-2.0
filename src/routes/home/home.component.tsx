@@ -1,12 +1,14 @@
 
+import SignatureCard from "../../components/reusable-material-components/signature-card/signature-card.component"
+import HomeCard from "../../components/page-components/home-card/home-card.component"
+
 import "./home.styles.scss"
 
 const Home = () => {
     return (
         <div className="HomeContainer">
-      
-                <h1>I am the Home Component</h1>
-
+            <SignatureCard/>
+            <HomeCard/>
         </div>
     )
 }
