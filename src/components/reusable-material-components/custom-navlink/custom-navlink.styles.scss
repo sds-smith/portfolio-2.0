@@ -1,0 +1,45 @@
+
+    .NavLink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        border-radius: 50%;
+
+        .NavLinkName {
+            font-size: 10px;
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+
+            .NavLinkName {
+                display: unset;
+            }
+        }
+    }
+    .IconContainer {
+        display: flex;
+        border: 1px solid black;
+        border-radius: 50%;
+
+        margin: 0px 20px;
+        padding: 5px;
+
+
+    }
+
+    .active {
+        .IconContainer {
+            background-color: rgb(230, 230, 225);
+        }
+        // background-color: gray;
+
+        // .NavLinkName {
+        //     display: unset;
+        //     font-weight: bold;
+        // }
+    }

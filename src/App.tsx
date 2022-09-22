@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+
+import { Routes, Route } from 'react-router-dom';
+import { ResponsiveProvider } from './contexts/responsive-context';
+import Navigation from './routes/navigation/navigation.component';
+import Home from './routes/home/home.component';
+import Portfolio from './routes/portfolio/portfolio.component';
+import About from './routes/about/about.component';
+import Contact from './routes/contact/contact.component';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes >
+      <Route path='/' element={ 
+                            <ResponsiveProvider>
+                              <Navigation />
+                            </ResponsiveProvider>  
+      }>
+        <Route index element={ <Home /> } />
+        <Route path='portfolio'element={<Portfolio/>}/>
+        <Route path='about'element={<About/>}/>
+        <Route path='contact'element={<Contact/>}/>
+      </Route>
+    </Routes>
   );
 }
 
