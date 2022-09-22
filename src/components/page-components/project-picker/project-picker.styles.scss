@@ -1,0 +1,24 @@
+
+.ProjectPickerContainer {
+    background-color: white;
+    margin: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 260px;
+    overflow-y: scroll;
+    overflow-x: visible;
+    max-height: 80vh;
+
+    .ProjectButton {
+        padding: 0px;
+        border: none;
+        border-radius: 10px;
+        background-color: none;
+        margin: 5px 0px;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}

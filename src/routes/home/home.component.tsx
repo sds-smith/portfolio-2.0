@@ -1,6 +1,6 @@
 
 import SignatureCard from "../../components/reusable-material-components/signature-card/signature-card.component"
-import HomeCard from "../../components/page-components/home-card/home-card.component"
+import HomeFeatureCard from "../../components/page-components/home-feature-card/home-feature-card.component"
 
 import "./home.styles.scss"
 
@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className="HomeContainer">
             <SignatureCard/>
-            <HomeCard/>
+            <HomeFeatureCard/>
         </div>
     )
 }

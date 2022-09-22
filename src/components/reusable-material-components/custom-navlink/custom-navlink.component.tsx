@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { NavLink } from "react-router-dom"
 
-import {NavLinkType} from '../../../assets/data/navLinks'
+import {NavLinkType} from '../../../assets/data/nav-links.data'
 
 import './custom-navlink.styles.scss'
 

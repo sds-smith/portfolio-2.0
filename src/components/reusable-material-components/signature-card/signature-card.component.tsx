@@ -1,5 +1,5 @@
 
-import ProfilePic from '../../../assets/images/profile_pic.jpeg'
+import ProfilePic from '../../../assets/media/profile_pic.jpeg'
 
 import './signature-card.styles.scss'
 

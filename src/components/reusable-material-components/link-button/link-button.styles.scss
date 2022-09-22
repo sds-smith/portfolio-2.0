@@ -1,0 +1,20 @@
+
+.PortfolioLink {
+    flex-grow: 1;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    box-shadow: 1px 1px black;
+
+    &:hover {
+        opacity: .5;
+    }
+
+    &:visited {
+        color: white;
+    }
+}
