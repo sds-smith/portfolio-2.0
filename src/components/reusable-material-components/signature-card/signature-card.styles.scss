@@ -9,19 +9,28 @@
     flex-direction: column;
     padding: 10px;
 
-    img {
+    .ProfilePic {
         width: 150px;
         height: auto;
         border-radius: 50%;
         margin-bottom: 10px;
     }
 
+    .Signature {
+        align-self:flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+    }
+
     .SignatureText {
         margin: 0px;
-        align-self:flex-end;
+        align-self: flex-end;
     }
 
     p {
         font-size: 14px;
     }
+
 }

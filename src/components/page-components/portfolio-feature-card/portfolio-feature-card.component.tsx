@@ -1,13 +1,12 @@
-import { FC } from 'react'
+import { FC, useContext } from 'react'
 
 import PortfolioCard from '../../reusable-material-components/portfolio-card/portfolio-card.component'
+import { PortfolioContext } from '../../../contexts/portfolio-context'
 import { projects } from '../../../assets/data/projects.data'
 import './portfolio-feature-card.styles.scss'
 
-type PortfolioFeatureCardProps = {
-    featuredProjectIndex: number;
-}
-const PortfolioFeatureCard: FC<PortfolioFeatureCardProps> = ({featuredProjectIndex}) => {
+const PortfolioFeatureCard: FC = () => {
+    const {featuredProjectIndex} = useContext(PortfolioContext)
 
     return (
         <div className='PortfolioFeatureContainer'>

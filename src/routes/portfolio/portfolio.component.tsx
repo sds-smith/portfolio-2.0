@@ -1,18 +1,16 @@
-import { useState } from "react"
+import { FC } from "react"
 import PortfolioFeatureCard from "../../components/page-components/portfolio-feature-card/portfolio-feature-card.component"
 import ProjectPicker from "../../components/page-components/project-picker/project-picker.component"
 
 
 import'./portfolio.styles.scss'
 
-
-const Portfolio = () => {
-    const [featuredProjectIndex, setFeaturedProjectIndex] = useState(0)
+const Portfolio: FC = () => {
 
     return (
         <div className="PortfolioContainer">
-            <PortfolioFeatureCard featuredProjectIndex={featuredProjectIndex} />
-            <ProjectPicker setFeaturedProjectIndex={setFeaturedProjectIndex} />
+            <PortfolioFeatureCard />
+            <ProjectPicker />
         </div>
     )
 }

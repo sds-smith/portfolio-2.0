@@ -1,0 +1,26 @@
+
+.PortfolioSnippetContainer {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    overflow-x: scroll;
+
+    .ProjectButton {
+        flex-grow: 1;
+        padding: 0px;
+        border: none;
+        border-radius: 10px;
+        background-color: none;
+        margin: 5px 5px;
+        width: 30%;
+        height: auto;
+        
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}

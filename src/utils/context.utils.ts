@@ -1,5 +1,10 @@
 import { ReactNode } from "react";
 
+export type PortfolioContextProps = {
+    featuredProjectIndex: number;
+    setFeaturedProjectIndex(featuredProjectIndex: number): void;
+}
+
 export type ActiveTabType = {
     'playlist' : boolean;
     'search_results' : boolean;
