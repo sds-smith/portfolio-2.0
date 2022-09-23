@@ -5,7 +5,7 @@ import "./index-element.styles.scss"
 
 const IndexElement = () => {
     return (
-        <div className="HomeContainer">
+        <div className="IndexElementContainer">
             <SignatureCard/>
             <Outlet />
         </div>
