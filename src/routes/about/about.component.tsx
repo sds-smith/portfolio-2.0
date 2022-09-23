@@ -7,7 +7,6 @@ import './about.styles.scss'
 const About = () => {
     return (
             <div className="AboutContainer">
-                {/* <SignatureCard/> */}
                 <AboutFeatureCard/>
             </div>
         
