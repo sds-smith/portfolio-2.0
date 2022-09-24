@@ -1,8 +1,10 @@
 
 
 .IndexElementContainer {
+    position: relative;
     background-color: rgb(230, 230, 225);
     min-height: 100vh;
+    max-height: 100%;
     display: flex;
     
 }

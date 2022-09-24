@@ -6,13 +6,15 @@ export type PortfolioContextProps = {
 }
 
 export type ActiveTabType = {
-    'playlist' : boolean;
-    'search_results' : boolean;
+    'featured' : boolean;
+    'all' : boolean;
+    'about' : boolean;
+    'certifications' : boolean;
 }
 
 export type ActiveViewType = {
-    'input' : boolean;
-    'results' : boolean;
+    'signature_card' : boolean;
+    'outlet' : boolean;
 }
 
 export type ResponsiveContextProps = {
@@ -21,8 +23,10 @@ export type ResponsiveContextProps = {
     activeView: ActiveViewType;
     setDesktop(): void;
     setMobileHome(): void;
-    setMobilePlaylist(): void;
-    setMobileSearchResults(): void;
+    setMobileFeatured(): void;
+    setMobileAll(): void;
+    setMobileAbout(): void;
+    setMobileCertifications(): void;
 }
 
 export type ProviderProps = {

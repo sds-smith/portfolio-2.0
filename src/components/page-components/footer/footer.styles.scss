@@ -1,0 +1,17 @@
+
+.FooterContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 20;
+
+    button {
+        border: none;
+        background-color: unset;
+    }
+}

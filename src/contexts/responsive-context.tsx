@@ -2,34 +2,62 @@ import { createContext, useState, FC } from "react";
 import { ResponsiveContextProps, ProviderProps } from "../utils/context.utils"; 
 import { useMediaQuery } from "../utils/custom-hooks/use-media-query";
 
-const desktopActiveTab = {
-    'playlist' : true,
-    'search_results' : true
-}
-
-const mobilePlaylistActiveTab = {
-    'playlist' : true,
-    'search_results' : false
-}
-
-const mobileSearchResultsActiveTab = {
-    'playlist' : false,
-    'search_results' : true
-}
 
 const desktopActiveView = {
-    'input' : true,
-    'results' : true
+    'signature_card' : true,
+    'outlet' : true
 }
 
-const mobileHomeView = {
-    'input' : true,
-    'results' : false
+const desktopActiveTab = {
+    'featured' : true,
+    'all' : true,
+    'about' : true,
+    'certifications' : true
 }
 
-const mobileResultsView = {
-    'input' : false,
-    'results' : true
+const mobileHomeActiveView = {
+    'signature_card' : true,
+    'outlet' : false
+}
+
+const mobileAltActiveView = {
+    'signature_card' : false,
+    'outlet' : true
+}
+
+const mobileHomeActiveTab = {
+    'featured' : false,
+    'all' : false,
+    'about' : false,
+    'certifications' : false
+}
+
+const mobileFeaturedActiveTab = {
+    'featured' : true,
+    'all' : false,
+    'about' : false,
+    'certifications' : false
+}
+
+const mobileAllActiveTab = {
+    'featured' : false,
+    'all' : true,
+    'about' : false,
+    'certifications' : false
+}
+
+const mobileAboutActiveTab = {
+    'featured' : false,
+    'all' : false,
+    'about' : true,
+    'certifications' : false
+}
+
+const mobileCertificationsActiveTab = {
+    'featured' : false,
+    'all' : false,
+    'about' : false,
+    'certifications' : true
 }
 
 export const ResponsiveContext = createContext<ResponsiveContextProps>({
@@ -38,8 +66,10 @@ export const ResponsiveContext = createContext<ResponsiveContextProps>({
     activeView: desktopActiveView,
     setDesktop: () => {},
     setMobileHome: () => {},
-    setMobilePlaylist: () => {},
-    setMobileSearchResults: () => {}
+    setMobileFeatured: () => {},
+    setMobileAll: () => {},
+    setMobileAbout: () => {},
+    setMobileCertifications: () => {}
 })
 
 export const ResponsiveProvider: FC<ProviderProps> = ({children}) => {
@@ -54,18 +84,28 @@ export const ResponsiveProvider: FC<ProviderProps> = ({children}) => {
     }
 
     const setMobileHome = () => {
-        setActiveTab(mobilePlaylistActiveTab)
-        setActiveView(mobileHomeView)
+        setActiveTab(mobileHomeActiveTab)
+        setActiveView(mobileHomeActiveView)
     }
 
-    const setMobilePlaylist = () => {
-        setActiveTab(mobilePlaylistActiveTab)
-        setActiveView(mobileResultsView)
+    const setMobileFeatured = () => {
+        setActiveTab(mobileFeaturedActiveTab)
+        setActiveView(mobileAltActiveView)
     }
 
-    const setMobileSearchResults = () => {
-        setActiveTab(mobileSearchResultsActiveTab)
-        setActiveView(mobileResultsView)
+    const setMobileAll = () => {
+        setActiveTab(mobileAllActiveTab)
+        setActiveView(mobileAltActiveView)
+    }
+
+    const setMobileAbout = () => {
+        setActiveTab(mobileAboutActiveTab)
+        setActiveView(mobileAltActiveView)
+    }
+
+    const setMobileCertifications = () => {
+        setActiveTab(mobileCertificationsActiveTab)
+        setActiveView(mobileAltActiveView)
     }
 
     const value = { 
@@ -74,8 +114,10 @@ export const ResponsiveProvider: FC<ProviderProps> = ({children}) => {
         activeView,
         setDesktop,
         setMobileHome,
-        setMobilePlaylist,
-        setMobileSearchResults
+        setMobileFeatured,
+        setMobileAll,
+        setMobileAbout,
+        setMobileCertifications
     }
 
     return <ResponsiveContext.Provider value={value} >{children}</ResponsiveContext.Provider>
