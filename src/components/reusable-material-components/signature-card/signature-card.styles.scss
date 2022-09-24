@@ -15,6 +15,10 @@
         color: rgb(64, 62, 37);
     }
 
+    &:hover {
+        opacity: 0.5;
+    }
+
     .ProfilePic {
         width: 150px;
         height: auto;
