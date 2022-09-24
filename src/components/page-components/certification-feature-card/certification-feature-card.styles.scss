@@ -10,4 +10,13 @@
     img {
         max-width: 100%;
     }
+
+    .TimeoutCounter {
+        width: 100%;
+        height: 20px;
+        background-color: gray;
+        transition: transform 3s linear;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
 }
