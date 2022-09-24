@@ -23,7 +23,7 @@ const CertificationsSidebar: FC<CertificationsSidebarProps> = ({setClickedCert})
 
         window.setTimeout(() => {
             setClickedCert(defaultCertification)
-            setMobileCertifications()
+            isMobile && setMobileCertifications()
         }, 3000)
     }
 
