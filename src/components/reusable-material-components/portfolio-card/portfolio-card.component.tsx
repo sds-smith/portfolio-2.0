@@ -20,8 +20,8 @@ const PortfolioCard: FC<PortfolioCardProps> = ({project, featured}) => {
                 <Fragment>
                     <p>{project.description}</p>
                     <div className='ButtonContainer'>
-                         <LinkButton to={project.live_link} >Open App</LinkButton>
-                         <LinkButton to={project.readme_link} >About</LinkButton>
+                         <LinkButton href={ project.live_link} >Open App</LinkButton>
+                         <LinkButton href={ project.readme_link} >About</LinkButton>
                     </div > 
                 </Fragment>
             }
