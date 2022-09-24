@@ -16,7 +16,9 @@
     }
 
     &:hover {
-        opacity: 0.5;
+        .SignatureText {
+            opacity: .5;
+        }
     }
 
     .ProfilePic {
