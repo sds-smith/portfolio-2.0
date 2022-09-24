@@ -100,7 +100,7 @@ function Contact() {
 
     return (
         <div className='ContactContainer' >
-            <form className={isMobile ? 'form mobile' : 'form'} onSubmit={handleSubmit} >
+            <form className={isMobile ? 'form FormMobile' : 'form'} onSubmit={handleSubmit} >
                 <h2>contact</h2>
                 {contactFormInputs.map(inputElement => (
                     <input 

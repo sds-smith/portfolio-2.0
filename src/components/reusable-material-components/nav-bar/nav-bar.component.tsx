@@ -11,7 +11,7 @@ const NavBar = () => {
     return ( 
         <div className='NavBar' style={{marginRight: isMobile ? 'unset' : '300px'}}>
             {navLinks.map((navLink) => 
-                <CustomNavLink navLink={navLink} />)}
+                <CustomNavLink key={navLink.name} navLink={navLink} />)}
         </div>
     )
 }

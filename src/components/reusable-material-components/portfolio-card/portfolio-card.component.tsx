@@ -8,7 +8,7 @@ type PortfolioCardProps = {
     featured?: boolean;
 }
 
-const PortfolioCard: FC<PortfolioCardProps> = ({project, featured}) => {
+const PortfolioCard: FC<PortfolioCardProps> = ({ project, featured}) => {
     return (
         <div 
             className='PortfolioCardContainer'

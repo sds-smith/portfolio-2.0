@@ -1,4 +1,5 @@
-import { Dispatch, FC, SetStateAction, useMemo } from "react"
+import { Dispatch, FC, SetStateAction, useMemo, useContext } from "react"
+import { ResponsiveContext } from "../../../contexts/responsive-context"
 import { codecademyCertifications, udemyCertifications, miscCertifications } from "../../../assets/data/certifications.data"
 import { CertificationType, defaultCertification } from "../../../assets/data/certifications.data"
 import './certifications-sidebar.styles.scss'
@@ -8,6 +9,7 @@ type CertificationsSidebarProps = {
 }
 
 const CertificationsSidebar: FC<CertificationsSidebarProps> = ({setClickedCert}) => {
+    const {isMobile, setMobileAbout, setMobileCertifications} = useContext(ResponsiveContext)
 
     const featuredCertifications = useMemo(() => {
         return udemyCertifications.filter(cert => cert.feature === true)
@@ -17,17 +19,20 @@ const CertificationsSidebar: FC<CertificationsSidebarProps> = ({setClickedCert})
 
     const enlargeCert = (certification: CertificationType) => {
         setClickedCert(certification)
+        setMobileAbout()
 
         window.setTimeout(() => {
             setClickedCert(defaultCertification)
+            setMobileCertifications()
         }, 3000)
     }
 
     return (
-        <div className='CertificationsSidebarContainer'>
-                        {
+        <div className={isMobile ? 'CertificationsSidebarContainer CertificationsSidebarMobile' : 'CertificationsSidebarContainer'}>
+            {
                 featuredCertifications.map((certification) => (
                     <button 
+                        key={certification.title}
                         onClick={() => enlargeCert(certification)} 
                         className='CertificateButton'
                     >

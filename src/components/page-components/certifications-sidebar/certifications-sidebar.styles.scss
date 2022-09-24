@@ -6,7 +6,6 @@
     border-radius: 10px;
     width: 260px;
     overflow-y: scroll;
-    overflow-x: visible;
     max-height: 80vh;
 
     .CertificateButton {
@@ -26,4 +25,9 @@
             cursor: pointer;
         }
     }
+}
+
+.CertificationsSidebarMobile {
+    margin: 20px;
+    width: 80%;
 }

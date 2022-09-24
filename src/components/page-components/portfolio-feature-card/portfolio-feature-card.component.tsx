@@ -11,7 +11,7 @@ const PortfolioFeatureCard: FC = () => {
     const {isMobile} = useContext(ResponsiveContext)
 
     return (
-        <div className={isMobile ? 'PortfolioFeatureContainer mobile' : 'PortfolioFeatureContainer'}>
+        <div className={isMobile ? 'PortfolioFeatureContainer PortfolioFeatureMobile' : 'PortfolioFeatureContainer'}>
             <h1>Featured Project</h1>
             <div className='CardContainer'>
                 <PortfolioCard project={projects[featuredProjectIndex]} featured />

@@ -6,7 +6,6 @@
     border-radius: 10px;
     width: 260px;
     overflow-y: scroll;
-    overflow-x: visible;
     max-height: 80vh;
 
     .ProjectButton {
@@ -23,6 +22,8 @@
     }
 }
 
-.mobile {
-    margin-top: 10px;
+.ProjectPickerMobile {
+    margin: 20px;
+    width: 80%;
+    border: 1px solid salmon;
 }

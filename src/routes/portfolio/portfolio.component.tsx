@@ -10,7 +10,6 @@ const Portfolio: FC = () => {
     const { isMobile, setMobileFeatured, setDesktop, activeTab } = useContext(ResponsiveContext)
 
     useEffect(() => {
-        console.log('hit')
         if (isMobile) {
             setMobileFeatured()
         } else {
@@ -20,7 +19,7 @@ const Portfolio: FC = () => {
     }, [isMobile])
 
     return (
-        <div className="PortfolioContainer">
+        <div className={isMobile ? "PortfolioContainer PortfolioMobile" : "PortfolioContainer"}>
            {activeTab.featured && <PortfolioFeatureCard />}
             {activeTab.all && <ProjectPicker />}
         </div>

@@ -7,18 +7,18 @@ const AboutFeatureCard = () => {
     const {isMobile} = useContext(ResponsiveContext)
 
     return (
-        <div className={isMobile ? 'AboutCardContainer mobile' : 'AboutCardContainer'}>
+        <div className={isMobile ? 'AboutCardContainer AboutCardMobile' : 'AboutCardContainer'}>
             <h1>About</h1>
-            {about.slice(0,4).map((paragraph) => (
-                <p>{paragraph}</p>
+            {about.slice(0,4).map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
             ))}
             <ul>
-                {skills.map((skill) => (
-                    <li>{skill}</li>
+                {skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
                 ))}
             </ul>
-            {about.slice(4).map((paragraph) => (
-                <p>{paragraph}</p>
+            {about.slice(4).map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
             ))}
         </div>
     )

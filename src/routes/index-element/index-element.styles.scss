@@ -6,6 +6,8 @@
     display: flex;
 
     .SignatureCardWrapper {
+        height: calc(100vh - 160px);
+        margin: 100px;
 
         .Quote {
             margin: 10px 40px;
@@ -13,4 +15,12 @@
             color: rgb(64, 62, 37);
         }
     }
+    .SignatureWrapperMobile {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
+
+

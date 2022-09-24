@@ -12,7 +12,7 @@ const IndexElement = () => {
     return (
         <div className="IndexElementContainer">
             {activeView.signature_card && 
-                <div className='SignatureCardWrapper'>
+                <div className={isMobile ? 'SignatureCardWrapper SignatureWrapperMobile' : 'SignatureCardWrapper'}>
                     <SignatureCard/>
                     {isMobile && 
                     <Fragment>

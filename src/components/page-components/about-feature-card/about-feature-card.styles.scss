@@ -4,13 +4,13 @@
     width: 760px;
     padding: 20px;
     height: fit-content;
-    margin-top: 100px;
+    margin: 100px auto;
     background-color: white;
 }
 
-.mobile {
-    width: 100%;
-    height: calc(90% - 190px);
-    margin: 10px;
+.AboutCardMobile {
+    width: 90%;
+    margin: 20px 10px;
+    height: 95%;
     overflow-y: scroll;
 }

@@ -19,7 +19,7 @@ const About = () => {
     }, [isMobile])
 
     return (
-            <div className={isMobile ? "AboutContainer mobile" : "AboutContainer"}>
+            <div className={isMobile ? "AboutContainer AboutContainerMobile" : "AboutContainer"}>
                 {  activeTab.about && (  
                     <Fragment>
                         {clickedCert.title ? (

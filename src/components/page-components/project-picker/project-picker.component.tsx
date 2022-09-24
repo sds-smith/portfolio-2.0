@@ -2,19 +2,25 @@ import { FC, useContext } from "react"
 import PortfolioCard from "../../reusable-material-components/portfolio-card/portfolio-card.component"
 import { PortfolioContext } from "../../../contexts/portfolio-context"
 import { ResponsiveContext } from "../../../contexts/responsive-context"
-import { projects } from "../../../assets/data/projects.data"
+import { projects, ProjectType } from "../../../assets/data/projects.data"
 import './project-picker.styles.scss'
 
 const ProjectPicker: FC = () => {
     const {setFeaturedProjectIndex} = useContext(PortfolioContext)
-    const {isMobile} = useContext(ResponsiveContext)
+    const {isMobile, setMobileFeatured} = useContext(ResponsiveContext)
+
+    const featureThisProject = (project: ProjectType) => {
+        setFeaturedProjectIndex(projects.indexOf(project))
+        setMobileFeatured()
+    }
 
     return (
-        <div className={isMobile ? 'ProjectPickerContainer mobile' : 'ProjectPickerContainer'}>
-                        {
-                projects.map((project) => (
+        <div className={isMobile ? 'ProjectPickerContainer ProjectPickerMobile' : 'ProjectPickerContainer'}>
+            {
+                projects.map((project, index) => (
                     <button 
-                        onClick={()=>setFeaturedProjectIndex(projects.indexOf(project))} 
+                        key={index}
+                        onClick={()=>featureThisProject(project)} 
                         className='ProjectButton'
                     >
                         <PortfolioCard project={project} />

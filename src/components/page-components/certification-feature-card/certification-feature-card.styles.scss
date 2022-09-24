@@ -1,5 +1,5 @@
 
-.CertificationFeatireCardContainer {
+.CertificationFeatureCardContainer {
     border-radius: 10px;
     width: 760px;
     padding: 20px;
@@ -19,4 +19,8 @@
         transform: scaleX(0);
         transform-origin: left;
     }
+}
+
+.CertificationFeatureCardMobile {
+    width: 100%;
 }
