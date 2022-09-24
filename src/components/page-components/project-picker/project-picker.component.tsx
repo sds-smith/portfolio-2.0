@@ -11,7 +11,7 @@ const ProjectPicker: FC = () => {
 
     const featureThisProject = (project: ProjectType) => {
         setFeaturedProjectIndex(projects.indexOf(project))
-        setMobileFeatured()
+        isMobile && setMobileFeatured()
     }
 
     return (
