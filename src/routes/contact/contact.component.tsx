@@ -1,4 +1,5 @@
-import { useState, Fragment, ChangeEventHandler, FormEventHandler } from 'react'
+import { useState, useContext, Fragment, ChangeEventHandler, FormEventHandler } from 'react'
+import { ResponsiveContext } from '../../contexts/responsive-context';
 import './contact.styles.scss'
 
 type Data = {
@@ -20,15 +21,16 @@ type HandleChange = ChangeEventHandler<HTMLInputElement> &
 
 
 function Contact() {
+    const {isMobile} = useContext(ResponsiveContext)
+
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [formSubmitted, setFormSubmitted] = useState(false)
-
-    const thankyou = `Thank you, ${firstName}.`
-    const submitted = 'Your form has been submitted.'
-
+    const [thankyou, setThankyou] = useState('')
+    const [submitted] = useState('Your form has been submitted.')
+   
     const handleSubmit: FormEventHandler = (e) => {
         e.preventDefault();
         fetch("/", {
@@ -43,6 +45,7 @@ function Contact() {
                      })
         })
         .then(() => {
+            setThankyou(`Thank you, ${firstName}.`)
             setFormSubmitted(true)
             setFirstName('')
             setLastName('')
@@ -97,7 +100,7 @@ function Contact() {
 
     return (
         <div className='ContactContainer' >
-            <form className='form' onSubmit={handleSubmit} >
+            <form className={isMobile ? 'form mobile' : 'form'} onSubmit={handleSubmit} >
                 <h2>contact</h2>
                 {contactFormInputs.map(inputElement => (
                     <input 

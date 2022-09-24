@@ -7,3 +7,10 @@
     margin-top: 100px;
     background-color: white;
 }
+
+.mobile {
+    width: 100%;
+    height: calc(90% - 190px);
+    margin: 10px;
+    overflow-y: scroll;
+}

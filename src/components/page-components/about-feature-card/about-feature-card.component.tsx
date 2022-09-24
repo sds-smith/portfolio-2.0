@@ -1,10 +1,13 @@
-
+import { useContext } from 'react'
+import { ResponsiveContext } from '../../../contexts/responsive-context'
 import { about, skills } from '../../../assets/data/about.data'
 import './about-feature-card.styles.scss'
 
 const AboutFeatureCard = () => {
+    const {isMobile} = useContext(ResponsiveContext)
+
     return (
-        <div className='AboutCardContainer'>
+        <div className={isMobile ? 'AboutCardContainer mobile' : 'AboutCardContainer'}>
             <h1>About</h1>
             {about.slice(0,4).map((paragraph) => (
                 <p>{paragraph}</p>

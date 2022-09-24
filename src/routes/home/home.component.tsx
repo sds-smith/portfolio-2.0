@@ -1,6 +1,7 @@
 import { useEffect, useContext } from "react"
 import HomeFeatureCard from "../../components/page-components/home-feature-card/home-feature-card.component"
 import { ResponsiveContext } from "../../contexts/responsive-context"
+// import {about} from '../../assets/data/about.data'
 
 import "./home.styles.scss"
 
@@ -16,9 +17,11 @@ const Home = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isMobile])
 
-    return (
+    return ( 
         <div className="HomeContainer">
-            {activeView.outlet && <HomeFeatureCard />}
+            {activeView.outlet && 
+                <HomeFeatureCard /> 
+            }
         </div>
     )
 }
