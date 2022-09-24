@@ -20,7 +20,7 @@ const Navigation = () => {
                 {isMobile ? (
                     <HamburgerMenu />    
                 ) : (
-                    <NavBar />
+                    <NavBar toggleNavBar={()=>{}} />
                 )}
             </div>  
             <Outlet />

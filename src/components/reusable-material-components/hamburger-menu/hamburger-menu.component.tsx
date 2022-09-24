@@ -8,14 +8,14 @@ import './hamburger-menu.styles.scss'
 const HamburgerMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const openNavBar = () => {
+    const toggleNavBar = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
     return (
         <div className='HamburgerMenuContainer'>
-            {isMenuOpen && <NavBar />}
-            <button className='HamburgerButton' onClick={openNavBar}>
+            <NavBar isMenuOpen={isMenuOpen} toggleNavBar={toggleNavBar} />
+            <button className='HamburgerButton' onClick={toggleNavBar}>
                 <img src={isMenuOpen ? closeMenu : hamburgerMenu} alt='hamburger menu icon' />
             </button>
         </div>

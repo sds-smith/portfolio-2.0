@@ -21,32 +21,37 @@ const Footer = () => {
             'name' : 'Featured Project',
             'button_text' : 'FEATURED',
             'on_click' : setMobileFeatured,
-            'active_tab' : 'portfolio'
+            'active_tab' : activeTab.featured,
+            'page' : 'portfolio'
         },
         {
             'name' : 'All Projects',
             'button_text' : 'ALL',
             'on_click' : setMobileAll,
-            'active_tab' : 'portfolio'
+            'active_tab' : activeTab.all,
+            'page' : 'portfolio'
         },
         {
             'name' : 'About',
             'button_text' : 'ABOUT',
             'on_click' : setMobileAbout,
-            'active_tab' : 'about'
+            'active_tab' : activeTab.about,
+            'page' : 'about'
         },
         {
             'name' : 'Certifications',
             'button_text' : 'CERTIFICATIONS',
             'on_click' : setMobileCertifications,
-            'active_tab' : 'about'
+            'active_tab' : activeTab.certifications,
+            'page' : 'about'
         },
     ]
 
     return (
         <div className ='FooterContainer'>
-            {footerButtons.filter(btn => btn.active_tab === page).map((footerButton) => 
+            {footerButtons.filter(btn => btn.page === page).map((footerButton) => 
                 <button 
+                    className = {footerButton.active_tab  ? 'activeFooter' : '' }
                     key={footerButton.name} 
                     onClick={footerButton.on_click} 
                 >

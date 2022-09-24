@@ -1,6 +1,6 @@
 
     .NavLink {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -33,13 +33,12 @@
     }
 
     .active {
+        display: flex;
         .IconContainer {
             background-color: rgb(230, 230, 225);
         }
-        // background-color: gray;
+    }
 
-        // .NavLinkName {
-        //     display: unset;
-        //     font-weight: bold;
-        // }
+    .open {
+        display: flex;
     }

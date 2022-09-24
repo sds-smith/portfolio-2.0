@@ -5,12 +5,31 @@ import {NavLinkType} from '../../../assets/data/nav-links.data'
 
 import './custom-navlink.styles.scss'
 
-type CustomNavLinkProps = {navLink: NavLinkType}
+type CustomNavLinkProps = {
+    navLink: NavLinkType;
+    isMenuOpen: boolean;
+    onClick: ()=>void;
+}
 
-const CustomNavLink: FC<CustomNavLinkProps> = ({navLink}) => {
+const CustomNavLink: FC<CustomNavLinkProps> = ({isMenuOpen, navLink, onClick}) => {
+
 
     return (
-        <NavLink end className={(navData) => navData.isActive ? 'NavLink active' : 'NavLink'} to={navLink.to}  >
+        <NavLink 
+            end 
+            className={
+                (navData) => navData.isActive ? 
+                    isMenuOpen ?
+                        'NavLink active open' : 
+                        'NavLink active'
+                    :
+                    isMenuOpen ?
+                        'NavLink open' :
+                        'NavLink'
+            } 
+            onClick={onClick}
+            to={navLink.to}  
+        >
             <div className='IconContainer'  >
                 <img src={navLink.icon} alt={navLink.name}/>
             </div>
