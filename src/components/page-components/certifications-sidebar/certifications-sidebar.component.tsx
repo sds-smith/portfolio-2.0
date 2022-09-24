@@ -19,7 +19,7 @@ const CertificationsSidebar: FC<CertificationsSidebarProps> = ({setClickedCert})
 
     const enlargeCert = (certification: CertificationType) => {
         setClickedCert(certification)
-        setMobileAbout()
+        isMobile && setMobileAbout()
 
         window.setTimeout(() => {
             setClickedCert(defaultCertification)
