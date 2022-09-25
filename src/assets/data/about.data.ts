@@ -16,7 +16,7 @@ export const about = [
     'From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building, partnering and mentoring. I bring meticulous attention to detail, and over a decade of experience iterating, prototyping, and scaling an ever-changing operational model.',
     'From my experience as a Frontend Engineer, I bring technical skills like:',
     'I build enterprise scalable apps with React 18, React Router 6, Redux (including thunk, saga, and persist) and other tools within the React ecosystem like Firebase, Stripe, AWS Lambda Functions, Jest and React Testing Library, and Styled Components.',
-    'I have earned a Certified Level 3 on the Triplebyte React assessment, attained a score of 725 on the CodeSignal General Coding Assessment (815 on the practice test), and built multiple enterprise-scale SPAs and PWAs.',
+    'I have earned a Certified Level 4 (Senior Engineer) on the Triplebyte React assessment, attained a score of 725 on the CodeSignal General Coding Assessment (815 on the practice test), and built multiple enterprise-scale SPAs and PWAs.',
     'I\'m driven by the desire to be better today than yesterday, better tomorrow than today, and by the belief that the moment we stop learning, we stop living.'
 ]
 
