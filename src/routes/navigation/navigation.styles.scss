@@ -12,3 +12,12 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.NavigationMobile {
+    position: fixed;
+    max-height: 100vh;
+
+    .Header {
+        background-color: gray;
+    }
+}

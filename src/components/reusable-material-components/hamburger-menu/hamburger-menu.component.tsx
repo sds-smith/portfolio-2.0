@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import NavBar from '../nav-bar/nav-bar.component'
+import { useContext } from 'react'
 import hamburgerMenu from '../../../assets/icons/hamburger-menu-24black.png'
 import closeMenu from '../../../assets/icons/close-24black.png'
+
+import { NavigationContext } from '../../../contexts/navigation-context'
 
 import './hamburger-menu.styles.scss'
 
 const HamburgerMenu = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-    const toggleNavBar = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
+    const {isMenuOpen, toggleNavBar} = useContext(NavigationContext)
 
     return (
         <div className='HamburgerMenuContainer'>
-            <NavBar isMenuOpen={isMenuOpen} toggleNavBar={toggleNavBar} />
             <button className='HamburgerButton' onClick={toggleNavBar}>
                 <img src={isMenuOpen ? closeMenu : hamburgerMenu} alt='hamburger menu icon' />
             </button>

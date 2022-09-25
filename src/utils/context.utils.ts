@@ -5,6 +5,12 @@ export type PortfolioContextProps = {
     setFeaturedProjectIndex(featuredProjectIndex: number): void;
 }
 
+export type NavigationContextProps = {
+    isMenuOpen: boolean;
+    setIsMenuOpen(isMenuOpen: boolean): void;
+    toggleNavBar(): void;
+}
+
 export type ActiveTabType = {
     'featured' : boolean;
     'all' : boolean;

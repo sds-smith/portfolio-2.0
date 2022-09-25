@@ -5,23 +5,16 @@ import { ResponsiveContext } from "../../../contexts/responsive-context"
 
 import './nav-bar.styles.scss'
 
-type NavBarProps = {
-    isMenuOpen?: boolean;
-    toggleNavBar: ()=>void;
-}
-
-const NavBar: FC<NavBarProps> = ({isMenuOpen=true, toggleNavBar}) => {
+const NavBar: FC = () => {
     const {isMobile} = useContext(ResponsiveContext)
 
     return ( 
-        <div className='NavBar' style={{marginRight: isMobile ? 'unset' : '300px'}}>
+        <div className={isMobile ? 'NavBar NavBarMobile' : 'NavBar'}>
             {
                 navLinks.map((navLink) => 
                     <CustomNavLink 
                         key={navLink.name} 
                         navLink={navLink} 
-                        isMenuOpen={isMenuOpen}
-                        onClick={toggleNavBar}
                     />) 
             }
         </div>

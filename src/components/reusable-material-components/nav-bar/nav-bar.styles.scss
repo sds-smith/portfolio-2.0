@@ -1,6 +1,10 @@
 .NavBar {
-    
     display: flex;
     justify-self: baseline;
     height: 100%;
+    margin-right: 300px;
+}
+
+.NavBarMobile {
+    margin-right: unset;
 }

@@ -1,18 +1,17 @@
-import { FC } from "react"
+import { FC, useContext } from "react"
 import { NavLink } from "react-router-dom"
 
+import {NavigationContext} from '../../../contexts/navigation-context'
 import {NavLinkType} from '../../../assets/data/nav-links.data'
 
 import './custom-navlink.styles.scss'
 
 type CustomNavLinkProps = {
     navLink: NavLinkType;
-    isMenuOpen: boolean;
-    onClick: ()=>void;
 }
 
-const CustomNavLink: FC<CustomNavLinkProps> = ({isMenuOpen, navLink, onClick}) => {
-
+const CustomNavLink: FC<CustomNavLinkProps> = ({navLink}) => {
+    const {isMenuOpen, toggleNavBar} = useContext(NavigationContext)
 
     return (
         <NavLink 
@@ -22,12 +21,12 @@ const CustomNavLink: FC<CustomNavLinkProps> = ({isMenuOpen, navLink, onClick}) =
                     isMenuOpen ?
                         'NavLink active open' : 
                         'NavLink active'
-                    :
+                :
                     isMenuOpen ?
                         'NavLink open' :
                         'NavLink'
             } 
-            onClick={onClick}
+            onClick={toggleNavBar}
             to={navLink.to}  
         >
             <div className='IconContainer'  >

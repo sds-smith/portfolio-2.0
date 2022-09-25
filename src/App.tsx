@@ -1,6 +1,7 @@
 
 import { Routes, Route } from 'react-router-dom';
 import { ResponsiveProvider } from './contexts/responsive-context';
+import { NavigationProvider } from './contexts/navigation-context';
 import { PortfolioProvider } from './contexts/portfolio-context';
 import Navigation from './routes/navigation/navigation.component';
 import IndexElement from './routes/index-element/index-element.component';
@@ -14,10 +15,13 @@ import './App.css';
 function App() {
   return (
     <Routes >
-      <Route element={ 
-                            <ResponsiveProvider>
+      <Route element={    
+                          <ResponsiveProvider>
+                            <NavigationProvider>
                               <Navigation />
-                            </ResponsiveProvider>  
+                            </NavigationProvider>  
+                          </ResponsiveProvider>
+
       }>
         <Route path='/' element={ 
                               <PortfolioProvider>
