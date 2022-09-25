@@ -1,6 +1,6 @@
-import { Dispatch, FC, SetStateAction, useMemo, useContext } from "react"
+import { Dispatch, FC, SetStateAction, useContext } from "react"
 import { ResponsiveContext } from "../../../contexts/responsive-context"
-import { codecademyCertifications, udemyCertifications, miscCertifications } from "../../../assets/data/certifications.data"
+import { featuredCertifications } from "../../../assets/data/certifications.data"
 import { CertificationType, defaultCertification } from "../../../assets/data/certifications.data"
 import './certifications-sidebar.styles.scss'
 
@@ -10,12 +10,6 @@ type CertificationsSidebarProps = {
 
 const CertificationsSidebar: FC<CertificationsSidebarProps> = ({setClickedCert}) => {
     const {isMobile, setMobileAbout, setMobileCertifications} = useContext(ResponsiveContext)
-
-    const featuredCertifications = useMemo(() => {
-        return udemyCertifications.filter(cert => cert.feature === true)
-        .concat(codecademyCertifications.filter(cert => cert.feature === true))
-        .concat(miscCertifications.filter(cert => cert.feature === true))
-    }, [])
 
     const enlargeCert = (certification: CertificationType) => {
         setClickedCert(certification)

@@ -21,13 +21,15 @@ export type CertificationType = {
     src: any;
     alt: string;
     feature : boolean;
+    rank : number;
 }
 
 export const defaultCertification = {
     title: '',
     src: '',
     alt: '',
-    feature: false
+    feature: false,
+    rank : 0
 }
 
 export const codecademyCertifications = [
@@ -35,67 +37,78 @@ export const codecademyCertifications = [
         title : 'Front End Engineer',
         src : Front_End,
         alt : 'front end certificate from Codecademy',
-        feature : true
+        feature : true,
+        rank : 4
     },
     {
         title : 'React',
         src : React,
         alt : 'react certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title : 'React Native',
         src : React_Native,
         alt : 'react native certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title: 'TypeScript',
         src : TypeScript,
         alt : 'typescript certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title : 'Intermediate Javascript',
         src : Intermediate_Javascript,
         alt : 'Intermediate Javascript certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title : 'Javascript',
         src : Javascript,
         alt : 'Javascript certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title : 'Vue',
         src : Vue,
         alt : 'Vue certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title : 'HTML',
         src : HTML,
         alt : 'HTML certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },
     {
         title : 'Command Line',
         src : Command_Line,
         alt : 'Command Line certificate from Codecademy',
-        feature : true
+        feature : true,
+        rank : 6
     },
     {
         title : 'NodeJS',
         src : NodeJS,
         alt : 'NodeJS certificate from Codecademy',
-        feature : true
+        feature : true,
+        rank : 5
     },
     {
         title : 'Express',
         src : Express,
         alt : 'Express certificate from Codecademy',
-        feature : false
+        feature : false,
+        rank : 0
     },    
 ]
 
@@ -117,13 +130,15 @@ export const udemyCertifications = [
         title : 'The Complete React Developer in 2022',
         src : CompleteReactDeveloper,
         alt : 'The Complete React Developer certificate from Zero to Mastery on Udemy',
-        feature : true
+        feature : true,
+        rank : 1
     },
     {
         title : 'oAuth 2.0',
         src : oAuth_2,
         alt : 'oAuth 2.0 certificate from Udemy',
-        feature : true
+        feature : true,
+        rank : 7
     },
 
 ]
@@ -133,15 +148,23 @@ export const miscCertifications = [
         title : 'Agile Foundations',
         src : Agile,
         alt : 'Agile Foundations certificate from Linkedin Learning',
-        feature : true
+        feature : true,
+        rank : 3
     },
     {
-        title : 'Triplebyte React Certification',
+        title : 'Triplebyte React Level 4',
         src : Triplebyte_React,
         alt : 'React certificate from Triplebyte',
-        feature : true
+        feature : true,
+        rank : 2
     }
 ]
+
+export const featuredCertifications = 
+    udemyCertifications.filter(cert => cert.feature === true)
+    .concat(codecademyCertifications.filter(cert => cert.feature === true))
+    .concat(miscCertifications.filter(cert => cert.feature === true))
+    .sort((a,b) => a.rank - b.rank)
 
 // const certificationsData = [
 //     {
