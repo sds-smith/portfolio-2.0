@@ -39,7 +39,7 @@ export const projects: Projects = [
         video_link : 'https://youtu.be/hQIzd601eyA',
         live_link : 'https://sds-crown-clothing.netlify.app',
         readme_link : 'https://github.com/sds-smith/crwn-clothing/blob/master/README.md',
-        description : 'React 18 | React Router 6 | Redux, Redux sagas | css-in-js | Firebase | Stripe | TypeScript. Securely sign-in with Google, or create and account to sign in with username/password. Add items to cart, delete items, securely checkout with Stripe.'
+        description : 'React 18 | React Router 6 | Redux, Redux sagas | css-in-js | Firebase | Stripe | TypeScript. Securely sign-in with Google, or create account. Update cart, securely checkout with Stripe.'
     },
     {   
         id: 'WHRDL-card',

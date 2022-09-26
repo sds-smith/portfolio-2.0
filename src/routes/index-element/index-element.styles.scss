@@ -6,8 +6,9 @@
     display: flex;
 
     .SignatureCardWrapper {
-        height: calc(100vh - 160px);
+        height: 80vh;
         margin: 100px;
+        overflow-y: scroll;
 
         .Quote {
             margin: 10px 40px;
@@ -18,7 +19,8 @@
     .SignatureWrapperMobile {
         margin: 0px;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
 }

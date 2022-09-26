@@ -19,9 +19,18 @@
 
 .PortfolioFeatureMobile {
     width: 90%;
-    margin: 20px auto;
+    margin: 2.5vh auto;
+    height: unset;
+    max-height: 75vh;
+
+    h1 {
+        margin: auto;
+        font-size: 3.5vh;
+    }
 
     .CardContainer {
         width: 90%;
+        max-height: 95%;
+        margin: auto;
     }
 }
