@@ -3,10 +3,20 @@
     border-radius: 10px;
     width: 800px;
     height: fit-content;
-    margin-top: 100px;
+    margin: 100px 0px;
     background-color: white;
 
     h1, h2 {
         margin-left: 20px;
+    }
+
+    .CredentialsContainer {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        width: calc(100% - 20px);
+        overflow-x: scroll;
+        height: auto;
+        margin-top: -100px;
     }
 }

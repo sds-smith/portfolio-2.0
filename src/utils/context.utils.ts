@@ -1,8 +1,11 @@
 import { ReactNode } from "react";
+import { CertificationType } from "../assets/data/certifications.data";
 
 export type PortfolioContextProps = {
     featuredProjectIndex: number;
     setFeaturedProjectIndex(featuredProjectIndex: number): void;
+    clickedCert: CertificationType;
+    setClickedCert(clickedCert: CertificationType): void;
 }
 
 export type NavigationContextProps = {
