@@ -33,15 +33,15 @@ export const contactLinksData: ContactLinksData = [
         alt : 'github icon for github.com/sds-smith'
     },    
     {
-        href : 'tel:12156305599',
-        id : 'phone',
-        src : PhoneIcon,
-        alt : 'phone icon for 215.630.5599'
-    },
-    {
         href : 'https://www.udemy.com/user/shawn-smith-2242/',
         id : 'udemy',
         src : UdemyIcon,
         alt : 'Shawn Smith instructor profile on Udemy.com'
+    },
+    {
+        href : 'tel:12156305599',
+        id : 'phone',
+        src : PhoneIcon,
+        alt : 'phone icon for 215.630.5599'
     },
 ]
