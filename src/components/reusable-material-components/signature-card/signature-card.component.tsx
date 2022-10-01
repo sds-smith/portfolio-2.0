@@ -8,15 +8,18 @@ import './signature-card.styles.scss'
 const SignatureCard = () => {
 
     return (
-        <Link to='about' className="SignatureCardContainer">
-            <img className='ProfilePic' src={ProfilePic} alt='portrait of Shawn Smith'/>
-            <div className='Signature'>
-                <h3 className='SignatureText'>Shawn Smith</h3>
-                <p className='SignatureText'>Frontend Developer | React.js</p>
-                <p className='SignatureText'>Open-source Contributor</p>
-            </div>
+        <div className="SignatureCardContainer">
+            <Link to='about' className='AboutLink' >
+               <img className='ProfilePic' src={ProfilePic} alt='portrait of Shawn Smith'/>
+               <div className='Signature'>
+                   <h3 className='SignatureText'>Shawn Smith</h3>
+                   <p className='SignatureText'>Frontend Developer | React.js</p>
+                   <p className='SignatureText'>Open-source Contributor</p>
+               </div>
+            </Link>
             <ContactCard />
-        </Link>
+        </div>
+
     )
 }
 

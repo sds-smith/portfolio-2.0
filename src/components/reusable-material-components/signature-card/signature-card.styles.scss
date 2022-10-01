@@ -11,38 +11,41 @@
     text-decoration: none;
     color: rgb(64, 62, 37);
 
-    &:visited {
-        color: rgb(64, 62, 37);
-    }
-
-    &:hover {
+    .AboutLink {
+        &:visited {
+            color: rgb(64, 62, 37);
+        }
+    
+        &:hover {
+            .SignatureText {
+                opacity: .5;
+            }
+        }
+    
+        .ProfilePic {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    
+        .Signature {
+            align-self:flex-end;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+    
+        }
+    
         .SignatureText {
-            opacity: .5;
+            margin: 0px;
+            align-self: flex-end;
+        }
+    
+        p {
+            font-size: 14px;
         }
     }
 
-    .ProfilePic {
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        margin-bottom: 10px;
-    }
-
-    .Signature {
-        align-self:flex-end;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-
-    }
-
-    .SignatureText {
-        margin: 0px;
-        align-self: flex-end;
-    }
-
-    p {
-        font-size: 14px;
-    }
 
 }

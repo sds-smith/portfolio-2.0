@@ -1,0 +1,34 @@
+
+.UdemySidebarContainer {
+    background-color: white;
+    margin: 100px 80px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 260px;
+    overflow-y: scroll;
+    max-height: 80vh;
+    height: 40vh;
+
+    .ProjectButton {
+        padding: 0px;
+        border: none;
+        border-radius: 10px;
+        background-color: none;
+        margin: 5px 0px;
+
+
+
+        img {
+            width: 95%;
+            &:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.UdemySidebarMobile {
+    margin: 20px;
+    width: 80%;
+}

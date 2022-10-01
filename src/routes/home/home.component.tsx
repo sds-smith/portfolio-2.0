@@ -1,7 +1,7 @@
-import { useEffect, useContext } from "react"
+import { useEffect, useContext, Fragment } from "react"
 import HomeFeatureCard from "../../components/page-components/home-feature-card/home-feature-card.component"
+import UdemySidebar from "../../components/page-components/udemy-sidebar/udemy-sidebar.component"
 import { ResponsiveContext } from "../../contexts/responsive-context"
-// import {about} from '../../assets/data/about.data'
 
 import "./home.styles.scss"
 
@@ -20,7 +20,11 @@ const Home = () => {
     return ( 
         <div className="HomeContainer">
             {activeView.outlet && 
+            <Fragment>
                 <HomeFeatureCard /> 
+                <UdemySidebar />
+            </Fragment>
+                
             }
         </div>
     )

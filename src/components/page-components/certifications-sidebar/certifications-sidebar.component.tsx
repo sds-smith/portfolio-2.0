@@ -25,6 +25,7 @@ const CertificationsSidebar: FC = () => {
 
     return (
         <div className={isMobile ? 'CertificationsSidebarContainer CertificationsSidebarMobile' : 'CertificationsSidebarContainer'}>
+            <h3>Certifications</h3>
             {
                 featuredCertifications.map((certification) => (
                     <button 

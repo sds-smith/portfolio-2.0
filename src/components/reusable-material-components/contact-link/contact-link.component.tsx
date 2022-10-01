@@ -11,6 +11,8 @@ const ContactLink: FC<ContactLinkProps> = ({contactLink}) => {
         <a 
             className='ContactLink'
             href={contactLink.href}
+            target='_blank'
+            rel="noreferrer"
             id={contactLink.id}
         >
             <img 
