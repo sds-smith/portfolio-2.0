@@ -2,7 +2,6 @@
 .OpenSourceSidebarContainer {
     background-color: white;
     margin: 0px 80px;
-    padding: 10px;
     border-radius: 10px;
     width: 260px;
     overflow-y: scroll;
@@ -15,7 +14,7 @@
       }
 
     .ProjectButton {
-        padding: 0px;
+        padding: 0px 10px;
         border: 1px solid black;
         border-radius: 10px;
         background-color: rgba(227, 216, 216, 0.82);
