@@ -8,6 +8,11 @@
     overflow-y: scroll;
     max-height: 80vh;
 
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+
     .ProjectButton {
         padding: 0px;
         border: none;
