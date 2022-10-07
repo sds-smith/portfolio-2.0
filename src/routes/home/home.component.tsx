@@ -1,5 +1,6 @@
 import { useEffect, useContext, Fragment } from "react"
 import HomeFeatureCard from "../../components/page-components/home-feature-card/home-feature-card.component"
+import OpenSourceSidebar from "../../components/page-components/open-source-sidebar/open-source-sidebar.component"
 import UdemySidebar from "../../components/page-components/udemy-sidebar/udemy-sidebar.component"
 import { ResponsiveContext } from "../../contexts/responsive-context"
 
@@ -22,7 +23,10 @@ const Home = () => {
             {activeView.outlet && 
             <Fragment>
                 <HomeFeatureCard /> 
-                <UdemySidebar />
+                <div className='SidebarContainer'>
+                    <UdemySidebar />
+                    <OpenSourceSidebar />
+                </div>
             </Fragment>
                 
             }
