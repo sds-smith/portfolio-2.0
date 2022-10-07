@@ -2,6 +2,7 @@
 .OpenSourceSidebarContainer {
     background-color: white;
     margin: 0px 80px;
+    padding: 10px;
     border-radius: 10px;
     width: 260px;
     overflow-y: scroll;
@@ -14,18 +15,25 @@
       }
 
     .ProjectButton {
-        padding: 0px 10px;
-        border: 1px solid black;
+        padding: 10px;
         border-radius: 10px;
-        background-color: rgba(227, 216, 216, 0.82);
-        width: 90%;
+        background-color: rgba(237, 237, 237, 0.82);
         margin: 5px auto;
-        text-decoration: none;
-        color: black;
 
-        &:visited {
-            color: black;
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
         }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:visited {
+                color: black;
+            }
+        }
+
 
         p {
             font-size: .75rem;
