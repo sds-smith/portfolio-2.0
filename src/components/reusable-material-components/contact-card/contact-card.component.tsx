@@ -9,7 +9,7 @@ const ContactCard = () => {
     return (
         <div className='ContactCardContainer'>
             {contactLinksData.map((contactLink) => 
-                <ContactLink key={contactLink.id} contactLink={contactLink}/>
+                <ContactLink key={contactLink.id} id={contactLink.id} contactLink={contactLink}/>
             )}   
         </div>
     )

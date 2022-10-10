@@ -10,7 +10,7 @@ const OpenSourceSidebar: FC = () => {
             <h2>Open-source Contributions</h2>
             <div className='ProjectButton'>
                 <a href='https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/spotify-api/index.d.ts' target='_blank' rel="noreferrer">
-                    <h4>DefinitelyTyped - Spotify API TypeScript Definitions</h4>
+                    <h3>DefinitelyTyped - Spotify API TypeScript Definitions</h3>
                     <p>contributed two new type definitions: RecommendationTrackObject & RecommendationAlbumObject</p>
                 </a>
             </div>

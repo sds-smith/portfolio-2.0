@@ -4,6 +4,7 @@ import './contact-link.styles.scss'
 
 type ContactLinkProps = {
     contactLink : ContactLinkType;
+    id : string;
 }
 
 const ContactLink: FC<ContactLinkProps> = ({contactLink}) => {

@@ -15,7 +15,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project, featured}) => {
         >
             <img src={project.background_image} alt={project.id} />
             <h2>{project.heading_title}</h2>
-            <h4>{project.heading_subtitle}</h4>
+            <h3>{project.heading_subtitle}</h3>
             {featured && 
                 <Fragment>
                     <p>{project.description}</p>
