@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
     return (
         <div className='HamburgerMenuContainer'>
             <button className='HamburgerButton' onClick={toggleNavBar}>
-                <img src={isMenuOpen ? closeMenu : hamburgerMenu} alt='hamburger menu icon' />
+                <img srcSet={isMenuOpen ? closeMenu : hamburgerMenu} alt='hamburger menu icon' />
             </button>
         </div>
 

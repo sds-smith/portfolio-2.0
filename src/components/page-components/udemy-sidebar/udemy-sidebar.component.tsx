@@ -10,7 +10,7 @@ const UdemySidebar: FC = () => {
         <div className={isMobile ? 'UdemySidebarContainer UdemySidebarMobile' : 'UdemySidebarContainer'}>
             <h2>View my Udemy Course</h2>
             <a className='ProjectButton' href='https://www.udemy.com/course/react-basics-for-developers/' target='_blank' rel="noreferrer">
-                <img src={UdemyCourses} alt='Shawn Smith instructor profile on Udemy.com'/>
+                <img srcSet={UdemyCourses} alt='Shawn Smith instructor profile on Udemy.com'/>
             </a>
         </div>
     )

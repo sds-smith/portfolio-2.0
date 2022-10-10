@@ -30,7 +30,7 @@ const CustomNavLink: FC<CustomNavLinkProps> = ({navLink}) => {
             to={navLink.to}  
         >
             <div className='IconContainer'  >
-                <img src={navLink.icon} alt={navLink.name}/>
+                <img srcSet={navLink.icon} alt={navLink.name}/>
             </div>
             <div className='NavLinkName'>{navLink.name}</div>
         </NavLink>

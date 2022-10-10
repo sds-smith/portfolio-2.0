@@ -13,7 +13,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project, featured}) => {
         <div 
             className='PortfolioCardContainer'
         >
-            <img src={project.background_image} alt={project.id} />
+            <img srcSet={project.background_image} alt={project.id} />
             <h2>{project.heading_title}</h2>
             <h3>{project.heading_subtitle}</h3>
             {featured && 

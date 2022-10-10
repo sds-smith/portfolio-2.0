@@ -10,7 +10,7 @@ const SignatureCard = () => {
     return (
         <div className="SignatureCardContainer">
             <Link to='about' className='AboutLink' >
-               <img className='ProfilePic' src={ProfilePic} alt='portrait of Shawn Smith'/>
+               <img className='ProfilePic' srcSet={ProfilePic} alt='portrait of Shawn Smith'/>
                <div className='Signature'>
                    <h2 className='SignatureText'>Shawn Smith</h2>
                    <p className='SignatureText'>Frontend Developer | React.js</p>

@@ -17,8 +17,9 @@ const PortfolioSnippet = () => {
     return (
         <div className='PortfolioSnippetContainer'>
                         {
-                projects.slice(0, 2).map((project) => (
+                projects.slice(0, 2).map((project, index) => (
                     <button 
+                        key={index}
                         onClick={() => goToPortfolio(project)} 
                         className='ProjectButton'
                     >

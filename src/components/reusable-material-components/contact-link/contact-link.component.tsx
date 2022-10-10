@@ -18,7 +18,7 @@ const ContactLink: FC<ContactLinkProps> = ({contactLink, id}) => {
         >
             <img 
                 className='icon' 
-                src={contactLink.src} 
+                srcSet={contactLink.src} 
                 alt={contactLink.alt}
             />
         </a>

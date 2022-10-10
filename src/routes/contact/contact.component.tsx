@@ -102,8 +102,9 @@ function Contact() {
         <div className='ContactContainer' >
             <form className={isMobile ? 'form FormMobile' : 'form'} onSubmit={handleSubmit} >
                 <h2>contact</h2>
-                {contactFormInputs.map(inputElement => (
+                {contactFormInputs.map((inputElement, index) => (
                     <input 
+                        key={index}
                         type='text' 
                         placeholder={inputElement.placeholder} 
                         name={inputElement.name} 

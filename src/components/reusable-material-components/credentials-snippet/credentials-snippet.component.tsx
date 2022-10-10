@@ -26,8 +26,9 @@ const CredentialsSnippet = () => {
     return (
         <div className='CredentialsSnippetContainer'>
             {
-                featuredCertifications.slice(0, 2).map((certification) => (
+                featuredCertifications.slice(0, 2).map((certification, index) => (
                     <button 
+                        key={index}
                         onClick={() => goToCert(certification)} 
                         className='CertificationButton'
                     >

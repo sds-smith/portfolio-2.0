@@ -9,7 +9,7 @@ const CertificationCard: FC<CertificationCardProps> = ({certification}) => {
     return (
         <div>
             <div>{certification.title}</div>
-            <img src={certification.src} alt={certification.alt} />
+            <img srcSet={certification.src} alt={certification.alt} />
         </div>
     )
 }
