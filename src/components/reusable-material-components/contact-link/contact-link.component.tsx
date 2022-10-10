@@ -7,14 +7,14 @@ type ContactLinkProps = {
     id : string;
 }
 
-const ContactLink: FC<ContactLinkProps> = ({contactLink}) => {
+const ContactLink: FC<ContactLinkProps> = ({contactLink, id}) => {
     return (
         <a 
             className='ContactLink'
             href={contactLink.href}
             target='_blank'
             rel="noreferrer"
-            id={contactLink.id}
+            id={id}
         >
             <img 
                 className='icon' 
