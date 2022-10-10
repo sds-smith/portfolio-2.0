@@ -16,7 +16,7 @@ const HomeFeatureCard = () => {
             <h2>Featured Credentials</h2>
             <CredentialsSnippet />
             <h2>Connect</h2>
-            <ContactCard />
+            <ContactCard parent='home feature card' />
         </div>
     )
 }

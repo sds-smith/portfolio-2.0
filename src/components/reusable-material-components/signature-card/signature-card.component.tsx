@@ -17,7 +17,7 @@ const SignatureCard = () => {
                    <p className='SignatureText'>Open-source Contributor</p>
                </div>
             </Link>
-            <ContactCard />
+            <ContactCard parent='signature card' />
         </div>
 
     )
