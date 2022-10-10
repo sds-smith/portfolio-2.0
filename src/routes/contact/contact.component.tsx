@@ -126,8 +126,8 @@ function Contact() {
             <div className='title'>
                 { formSubmitted &&
                     <Fragment>
-                        <h3 className='success' id='thankyou'>{thankyou}</h3>
-                        <h3 className='success' id='submitted'>{submitted}</h3>
+                        <h2 className='success' id='thankyou'>{thankyou}</h2>
+                        <h2 className='success' id='submitted'>{submitted}</h2>
                     </Fragment>
                 }
             </div>

@@ -12,7 +12,7 @@ const SignatureCard = () => {
             <Link to='about' className='AboutLink' >
                <img className='ProfilePic' src={ProfilePic} alt='portrait of Shawn Smith'/>
                <div className='Signature'>
-                   <h3 className='SignatureText'>Shawn Smith</h3>
+                   <h2 className='SignatureText'>Shawn Smith</h2>
                    <p className='SignatureText'>Frontend Developer | React.js</p>
                    <p className='SignatureText'>Open-source Contributor</p>
                </div>
