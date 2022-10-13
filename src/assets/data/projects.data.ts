@@ -1,7 +1,7 @@
 
 import CrownClothing from '../media/crwn-clothing.png'
 import AssembleTheJams from '../media/atj.png'
-import RandomPasswordGenerator from '../media/rpg.png'
+// import RandomPasswordGenerator from '../media/rpg.png'
 import Weather from '../media/weather.png'
 import WHRDL from '../media/WHRDL_card.png'
 import EDD from '../media/edd.png'
@@ -61,16 +61,16 @@ export const projects: Projects = [
         readme_link : 'https://github.com/sds-smith/weather/blob/master/README.md',
         description : 'Search by City/ State/ Country, or by longitudinal coordinates, and receive up-to-the-minute weather data'
     },
-    {   
-        id: 'rpg-card',
-        heading_title : 'Password Generator',
-        heading_subtitle : 'HTML/JS web app',
-        background_image : RandomPasswordGenerator,
-        video_link : '',
-        live_link : 'https://sds-smith.github.io/password_generator/',
-        readme_link : 'https://github.com/sds-smith/password_generator/blob/master/README.md',
-        description : 'Generate random unique password and copy to clipboard'
-    },
+    // {   
+        // id: 'rpg-card',
+        // heading_title : 'Password Generator',
+        // heading_subtitle : 'HTML/JS web app',
+        // background_image : RandomPasswordGenerator,
+        // video_link : '',
+        // live_link : 'https://sds-smith.github.io/password_generator/',
+        // readme_link : 'https://github.com/sds-smith/password_generator/blob/master/README.md',
+        // description : 'Generate random unique password and copy to clipboard'
+    // },
     {   
         id: 'edd-card',
         heading_title : 'Real Estate Website',
