@@ -15,6 +15,8 @@ import Agile from '../media/certifications/Agile_Foundations_LinkedinLearning.pn
 import Triplebyte_React from '../media/certifications/React_Triplebyte.png'
 import TypeScript from '../media/certifications/TypeScript_Codecademy.png'
 import CompleteReactDeveloper from '../media/certifications/Complete_React_Developer_ztm_Udemy.jpeg'
+import JavaScriptAdvancedConcepts from '../media/certifications/JavaScript_Advanced_Concepts_ztm_Udemy.jpeg'
+import CodingInterview from '../media/certifications/Master_Coding_Interview_ztm_Udemy.jpeg'
 
 export type CertificationType = {
     title: string;
@@ -94,14 +96,14 @@ export const codecademyCertifications = [
         src : Command_Line,
         alt : 'Command Line certificate from Codecademy',
         feature : true,
-        rank : 6
+        rank : 8
     },
     {
         title : 'NodeJS',
         src : NodeJS,
         alt : 'NodeJS certificate from Codecademy',
         feature : true,
-        rank : 5
+        rank : 6
     },
     {
         title : 'Express',
@@ -138,9 +140,22 @@ export const udemyCertifications = [
         src : oAuth_2,
         alt : 'oAuth 2.0 certificate from Udemy',
         feature : true,
+        rank : 9
+    },
+    {
+        title : 'JavaScript - the Advanced Concepts (2022)',
+        src : JavaScriptAdvancedConcepts,
+        alt : 'JavaScript the advanced concepts certificate from Zero to Mastery on Udemy',
+        feature : true,
+        rank : 5
+    },    
+    {
+        title : 'Data Structures and Algorithms',
+        src : CodingInterview,
+        alt : 'Master the Coding Interview: Data Structures and Algorithms certificate from Zero to Mastery on Udemy',
+        feature : true,
         rank : 7
     },
-
 ]
 
 export const miscCertifications = [
