@@ -16,7 +16,7 @@ const ProjectPicker: FC = () => {
 
     return (
         <div className={isMobile ? 'ProjectPickerContainer ProjectPickerMobile' : 'ProjectPickerContainer'}>
-            <h2>Projects</h2>
+            <h2>{`Scroll ${projects.length} Projects`}</h2>
             {
                 projects.map((project, index) => (
                     <button 

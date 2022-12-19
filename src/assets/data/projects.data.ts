@@ -1,6 +1,9 @@
 
+import CoffeeExplorer from '../media/coffee-explorer.png';
+import LaunchSimulator from '../media/launch-simulator.png';
 import CrownClothing from '../media/crwn-clothing.png'
-import AssembleTheJams from '../media/atj.png'
+import AssembleTheJams from '../media/atj.png';
+import Counterpoint from '../media/counterpoint.png';
 // import RandomPasswordGenerator from '../media/rpg.png'
 import Weather from '../media/weather.png'
 import WHRDL from '../media/WHRDL_card.png'
@@ -22,6 +25,24 @@ export type Projects = ProjectType[]
 export const projects: Projects = [
 
     {   
+        id: 'coffee-explorer-card',
+        heading_title : 'Coffee Explorer',
+        heading_subtitle : 'NextJS Web App',
+        background_image : CoffeeExplorer,
+        video_link : '',
+        live_link : 'https://coffee-explorer-sds-smith.vercel.app/',
+        readme_link : 'https://github.com/sds-smith/discover-coffee-stores/blob/main/README.md',
+        description : 'NextJS App leverages both Server Side Rendering and Static Site Generation; use Foursquare with the browser\'s built-in geolocation API to find coffee shops near you.'
+    },    {   
+        id: 'nasa-card',
+        heading_title : 'Space Launch Scheduling Simulator',
+        heading_subtitle : 'Full-stack MERN App',
+        background_image : LaunchSimulator,
+        video_link : '',
+        live_link : 'https://d1jypathmb29h0.cloudfront.net',
+        readme_link : 'https://github.com/sds-smith/NASA-PROJECT/blob/main/README.md',
+        description : 'Client-side React with fully-versionable API on https Express server. Runs in Docker container hosted on AWS Cloudfront from an EC2 instance.'
+    },    {   
         id: 'atj-card',
         heading_title : 'Assemble the Jams',
         heading_subtitle : 'React Progressive Web App',
@@ -40,6 +61,16 @@ export const projects: Projects = [
         live_link : 'https://sds-crown-clothing.netlify.app',
         readme_link : 'https://github.com/sds-smith/crwn-clothing/blob/master/README.md',
         description : 'React 18 | React Router 6 | Redux, Redux sagas | css-in-js | Firebase | Stripe | TypeScript. Securely sign-in with Google, or create account. Update cart, securely checkout with Stripe.'
+    },
+    {   
+        id: 'counterpoint-card',
+        heading_title : 'Counterpoint Brewing and Blending',
+        heading_subtitle : 'GatsbyJS Blog',
+        background_image : Counterpoint,
+        video_link : '',
+        live_link : 'https://d39l9qijldrs1e.cloudfront.net',
+        readme_link : 'https://github.com/sds-smith/gatsby-blog/blob/main/README.md',
+        description : 'Static Web App built with GatsbyJS and hosted on AWS Cloudfront from an S3 bucket.'
     },
     {   
         id: 'WHRDL-card',
