@@ -1,5 +1,6 @@
 
 .PortfolioCardContainer {
+
     border-radius: 10px;
     background-color: rgb(187, 187, 206);
     overflow: hidden;
@@ -15,6 +16,11 @@
 
     h3 {
         font-size: 1em;
+    }
+
+    .textContent {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .ButtonContainer {
