@@ -6,7 +6,7 @@ import Javascript from '../media/certifications/Javascript_Codecademy.png'
 import React from '../media/certifications/React_Codecademy.png'
 import React_Native from '../media/certifications/React_Native_Codecademy.png'
 import Vue from '../media/certifications/Vue_Codecademy.png'
-import NodeJS from '../media/certifications/NodeJS_Codecademy.png'
+import NodeJS from '../media/certifications/Complete_NodeJS_Developer_ztm_Udemy.jpeg'
 import Responsive_Design from '../media/certifications/Responsive_Web_FCC.png'
 import JavascriptFCC from '../media/certifications/Javascript_Algorithms_Data_Structures_FCC.png'
 import oAuth_2 from '../media/certifications/oAuth_2.0_Udemy.jpeg'
@@ -17,6 +17,7 @@ import TypeScript from '../media/certifications/TypeScript_Codecademy.png'
 import CompleteReactDeveloper from '../media/certifications/Complete_React_Developer_ztm_Udemy.jpeg'
 import JavaScriptAdvancedConcepts from '../media/certifications/JavaScript_Advanced_Concepts_ztm_Udemy.jpeg'
 import CodingInterview from '../media/certifications/Master_Coding_Interview_ztm_Udemy.jpeg'
+import Python from '../media/certifications/Complete_Python_Developer_ztm_Udemy.jpeg'
 
 export type CertificationType = {
     title: string;
@@ -99,13 +100,6 @@ export const codecademyCertifications = [
         rank : 8
     },
     {
-        title : 'NodeJS',
-        src : NodeJS,
-        alt : 'NodeJS certificate from Codecademy',
-        feature : true,
-        rank : 6
-    },
-    {
         title : 'Express',
         src : Express,
         alt : 'Express certificate from Codecademy',
@@ -132,6 +126,20 @@ export const udemyCertifications = [
         title : 'The Complete React Developer in 2022',
         src : CompleteReactDeveloper,
         alt : 'The Complete React Developer certificate from Zero to Mastery on Udemy',
+        feature : true,
+        rank : 1
+    },
+    {
+        title : 'The Complete NodeJS Developer in 2023',
+        src : NodeJS,
+        alt : 'The Complete NodeJS Developer certificate from Zero to Mastery on Udemy',
+        feature : true,
+        rank : 1
+    },
+    {
+        title : 'The Complete Python Developer in 2023',
+        src : Python,
+        alt : 'The Complete Python Developer certificate from Zero to Mastery on Udemy',
         feature : true,
         rank : 1
     },
